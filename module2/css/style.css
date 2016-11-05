@@ -67,7 +67,7 @@ section {
 }
 
 /********** Tablet only **********/
-@media (min-width: 760px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .col-tb-1, .col-tb-2, .col-tb-3, .col-tb-4, .col-tb-5, .col-tb-6, .col-tb-7, .col-tb-8, .col-tb-9, .col-tb-10, .col-tb-11, .col-tb-12 {
     float: left;
     border: 1px solid green;
@@ -111,7 +111,7 @@ section {
 }
 
 /********** Mobile only **********/
-@media (min-width: 760px) and (max-width: 991px) {
+@media (max-width: 767px) {
   .col-mb-1, .col-mb-2, .col-mb-3, .col-mb-4, .col-mb-5, .col-mb-6, .col-mb-7, .col-mb-8, .col-mb-9, .col-mb-10, .col-mb-11, .col-mb-12 {
     float: left;
     border: 1px solid green;
