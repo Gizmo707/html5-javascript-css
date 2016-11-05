@@ -4,8 +4,12 @@
 }
 h1 {
   margin-bottom: 15px;
+  text-align: center;
 }
 
+title {
+  text-align: center;
+}
 section {
   border: 1px solid black;
   background-color: #A52A2A;
@@ -20,6 +24,10 @@ section {
 /* Simple Responsive Framework. */
 .row {
   width: 100%;
+}
+
+div {
+  position: relative;
 }
 
 /********** Destop only **********/
