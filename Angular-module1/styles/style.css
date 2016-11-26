@@ -1,0 +1,23 @@
+.message {
+  font-size: 1.3em; font-weight: bold;
+}
+
+.form-ok {
+  color: green;
+}
+
+.form-noData {
+  color: red;
+}
+
+#lunch-menu {
+  border-width: 2px;
+}
+
+.form-ok #lunch-menu {
+  border-color: green;
+}
+
+.form-noData #lunch-menu {
+  border-color: red;
+}
