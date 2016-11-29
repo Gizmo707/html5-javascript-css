@@ -8,7 +8,9 @@ li {
   font-size: 1.2em;
 }
 li > button {
-  margin-left: 6px;
+  margin-left: 16px;
+  position:absolute;
+  right:  140px;
 }
 button > span {
   color: green;
