@@ -44,12 +44,12 @@
     var service = this;
 
     var itemsToBuy = [
-      {name: 'bags of cookies       ', quantity: 3},
-      {name: 'bags of chips         ', quantity: 5},
+      {name: 'bags of cookies',        quantity: 3},
+      {name: 'bags of chips',          quantity: 5},
       {name: 'bottles of soft drinks', quantity: 2},
-      {name: 'bottle of hard drink  ' ,quantity: 1},
+      {name: 'bottle of hard drink',   quantity: 1},
       {name: 'pepperoni frozen pizza', quantity: 1},
-      {name: 'bottles of antiacid   ', quantity: 2}
+      {name: 'bottles of antiacid',    quantity: 2}
     ];
 
     var itemsBought = [];

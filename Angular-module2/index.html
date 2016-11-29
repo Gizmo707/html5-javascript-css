@@ -26,7 +26,8 @@
      </ul>
      <div ng-if='toBuy.emptyToBuy();' class="emptyMessage">Everything is bought!</div>
      <hr>
-     <div class="">
+     <!-- Add items to list -->
+     <div>
        <input type="text" ng-model="toBuy.itemName" placeholder="item name">
        <input type="text" ng-model="toBuy.itemQuantity" placeholder="quantity">
        <button ng-click="toBuy.addItem();">Add Item</button>
