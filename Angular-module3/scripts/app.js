@@ -14,8 +14,13 @@
     narrowDown.searchTerm = '';
 
     narrowDown.getItems =  function() {
-      narrowDown.found = MenuSearchService
-          .getMatchedMenuItems(narrowDown.searchTerm.toLowerCase());
+      MenuSearchService
+          .getMatchedMenuItems(narrowDown.searchTerm.toLowerCase())
+          .then(
+            function(result) {
+              narrowDown.found = result
+            }
+          );
     }
 
   }
@@ -25,11 +30,17 @@
     var service = this;
 
     service.getMatchedMenuItems = function(searchTerm) {
+      // if (searchTerm === '') {
+      //   return [];
+      // }
       return $http({
         method: 'GET',
         url: MenuURL
       }).then(function(result) {
         var foundItems = [];
+        if (searchTerm === '') {
+          return [];
+        }
         for (var item in result.data.menu_items) {
           if (result.data.menu_items[item]
                 .description.toLowerCase().indexOf(searchTerm) >= 0) {

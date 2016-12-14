@@ -18,7 +18,13 @@
     <div class="form-group narrow-button">
       <button ng-click="narrowDown.getItems()" class="btn btn-primary">Narrow It Down For Me!</button>
     </div>
-
+    <br><br><br>
+    <div class="">
+        <ul>
+        <li ng-repeat="item in narrowDown.found">  {{item.name}}: {{item.description}}
+        </li>
+      </ul>
+    </div>
     <!-- found-items should be implemented as a component -->
     <found-items found-items="...." on-remove="...."></found-items>
   </div>
